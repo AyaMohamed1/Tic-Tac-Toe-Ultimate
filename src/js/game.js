@@ -26,7 +26,7 @@ function modeChosen(cell) {
 function single() {
   new Audio("src/soundEffects/select.wav").play();
   async function selectSingle() {
-    await new Promise(resolve => setTimeout(resolve, 400));
+    await new Promise(resolve => setTimeout(resolve, 300));
     selectBox.classList.add("hide");
     playBoard.classList.add("show");
     xTurn.classList.add("active");
@@ -38,7 +38,7 @@ function single() {
 function multi() {
   new Audio("src/soundEffects/select.wav").play();
   async function selectMulti() {
-    await new Promise(resolve => setTimeout(resolve, 400));
+    await new Promise(resolve => setTimeout(resolve, 300));
     selectBox.classList.add("hide");
     playBoard.classList.add("show");
     xTurn.classList.add("active");
@@ -117,7 +117,7 @@ function putOnBoard(cellRow, cellCol, ai) {
     }
 
     async function aiPlay() {
-      await new Promise(resolve => setTimeout(resolve, 400));
+      await new Promise(resolve => setTimeout(resolve, 300));
       document.getElementById(boxId).innerText = symbolBoard;
       new Audio("src/soundEffects/aiClick.wav").play();
       if (player) {
@@ -142,7 +142,7 @@ function putOnBoard(cellRow, cellCol, ai) {
 
       // setting the result box value
       async function aiPlayWin() {
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise(resolve => setTimeout(resolve, 1000));
         document.getElementById("winner").innerHTML =
           ai == 1
             ? `Player X Wins! <span class="winner">&#127942;</span>`
@@ -160,7 +160,7 @@ function putOnBoard(cellRow, cellCol, ai) {
         [-1, -1, -1],
       ];
       async function aiPlayDraw() {
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise(resolve => setTimeout(resolve, 1000));
         document.getElementById("winner").innerText = "Cool Draw!";
         new Audio("src/soundEffects/draw.wav").play();
         onWin();
