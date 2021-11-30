@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="src/style/signUp.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign In To Play</h1>
+      <form id="form-id">
+        <!-- user Name -->
+        <div class="input-field">
+          <input
+            type="text"
+            name="username"
+            id="u-name"
+            required
+            pattern="[A-Za-z]{3,}"
+          />
+          <span></span>
+          <label for="username"> Username</label>
+        </div>
+        <!-- Password -->
+        <div class="input-field">
+          <input type="password" id="pass_text1" required pattern=".{8,}" />
+          <span></span>
+          <label for="pass"
+            >Password&nbsp;&nbsp;&nbsp;
+            <span id="invalid" class="error">
+              Please enter at least 8 Characters*</span
+            ></label
+          >
+        </div>
+
+        <input
+          type="button"
+          id="submit"
+          value="Sign In"
+          onclick="signInValidation()"
+        />
+        <div class="signUp">
+          New User?<a id="signUpLink" href="signUp.html"> Create an account </a>
+        </div>
+      </form>
+    </div>
+    <script src="src/js/signIn.js"></script>
+  </body>
+</html>

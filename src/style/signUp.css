@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  background: linear-gradient(120deg, #3494e6, #fc5c7d);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  height: 100vh;
+  overflow: hidden;
+}
+.container,
+.redirect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  border-radius: 8px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.288);
+}
+.container {
+  z-index: 20;
+}
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(175, 175, 175);
+  background: linear-gradient(45deg, #3494e6 5%, #fc5c7d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transition: 0.7s;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: -5px;
+  color: green;
+}
+input:not(:focus):invalid ~ label {
+  color: rgba(255, 0, 0, 0.6);
+  top: 0px;
+}
+input:focus:invalid ~ label {
+  color: red;
+}
+input:focus:invalid ~ label .error {
+  display: inline;
+}
+
+input:not(:empty):invalid ~ label .error {
+  display: inline;
+}
+input:not(:focus):valid ~ label {
+  top: 0px;
+  color: green;
+}
+
+span::before {
+  position: absolute;
+  width: 0%;
+  left: 0;
+  top: 40px;
+  height: 2px;
+  background-color: green;
+  content: "";
+  transition: 0.7s;
+}
+input:focus ~ span::before,
+input:valid ~ span::before {
+  width: 100%;
+}
+.signUp {
+  position: relative;
+  left: 39px;
+  margin-bottom: 25px;
+}
+#signUpLink {
+  text-decoration: none;
+}
+#submit {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  border: 1px solid;
+  background: linear-gradient(120deg, #3494e6, #fc5c7d);
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  transition: 1s;
+  opacity: 0.5;
+  margin-bottom: 25px;
+}
+
+#submit:hover {
+  transition: 1s;
+  background: linear-gradient(-120deg, #3494e6, #fc5c7d);
+  opacity: 1;
+}
+.error {
+  display: none;
+  color: red;
+  font-size: 11px;
+}
+/* -----------Redirect------------ */
+
+.redirect h1 {
+  background: linear-gradient(45deg, #44b80f 5%, #23a811);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+h2,
+h4 {
+  margin: 20px 0;
+  text-align: center;
+  background: linear-gradient(45deg, #3494e6 5%, #fc5c7d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* ---------Show/Hide---------- */
+.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 2s;
+}
+.hide {
+  opacity: 0 !important;
+}
+
+/* -------------Animation---------- */
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* --------Responsive------------ */
+
+@media only screen and (max-width: 450px) {
+  .container,
+  .redirect {
+    width: 300px;
+  }
+  .input-field {
+    margin: 35px 0;
+  }
+  .signUp {
+    font-size: 12px;
+    left: 20px;
+  }
+}
+@media only screen and (max-height: 450px) and (orientation: landscape) {
+  body {
+    width: 100vw;
+    height: 150vw;
+    overflow: scroll;
+  }
+  .container {
+    top: 110%;
+  }
+}

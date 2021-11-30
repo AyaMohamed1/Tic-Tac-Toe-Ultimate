@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="src/style/game.css" />
+  </head>
+  <body>
+    <!-------- Select Box ------->
+    
+    <div class="select-box" id="select-box">
+      <p class="header">Tic-Tac-Toe</p>
+      <div class="content">
+        <p class="title">Select Mode</p>
+        <div class="sides">
+          <button class="playerX" onclick="single()">Single Player</button>
+          <button class="playerO" onclick="multi()">MultiPlayer</button>
+        </div>
+      </div>
+    </div>
+
+    <!-------- playboard section ------>
+
+    <div class="play-board" id="play-board">
+      <div class="details">
+        <div class="players">
+          <span id="Xturn">X's Turn</span>
+          <span id="Oturn">O's Turn</span>
+        </div>
+      </div>
+      <div class="play-area">
+        <section>
+          <span id="box1" onclick="modeChosen(this)"></span>
+          <span id="box2" onclick="modeChosen(this)"></span>
+          <span id="box3" onclick="modeChosen(this)"></span>
+        </section>
+        <section>
+          <span id="box4" onclick="modeChosen(this)"></span>
+          <span id="box5" onclick="modeChosen(this)"></span>
+          <span id="box6" onclick="modeChosen(this)"></span>
+        </section>
+        <section>
+          <span id="box7" onclick="modeChosen(this)"></span>
+          <span id="box8" onclick="modeChosen(this)"></span>
+          <span id="box9" onclick="modeChosen(this)"></span>
+        </section>
+      </div>
+    </div>
+
+    <!----------- result box -------->
+
+    <div class="result-box" id="result-box">
+      <div class="won-text" id="winner"></div>
+      <div class="btn" onclick="onReplay()"><button>Play again</button></div>
+    </div>
+
+    <!--------- Animation ------->
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="ex">	
+      &#10060</div>
+    <div class="ex">	
+      &#10060</div>
+    <script src="src/js/game.js"></script>
+  </body>
+</html>
