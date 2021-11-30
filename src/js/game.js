@@ -398,3 +398,6 @@ function checkNewValue(cell) {
   }
   player = player == 1 ? 0 : 1;
 }
+function changeMode() {
+  document.location.reload(true);
+}
