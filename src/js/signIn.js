@@ -8,7 +8,11 @@ function signInValidation() {
     document.getElementById("invalid").style.display = "inline";
   } else {
     const usersData = JSON.parse(localStorage.getItem("user"));
-
+ if (usersData == null) {
+      document.getElementById("invalid").innerText =
+        "Invalid Username or Password!";
+      document.getElementById("invalid").style.display = "inline";
+    } else {
     for (i = 0; i < usersData.length; i++) {
       if (
         username == usersData[i].username &&
@@ -22,6 +26,7 @@ function signInValidation() {
           "Invalid Username or Password!";
         document.getElementById("invalid").style.display = "inline";
       }
+    }
     }
   }
 }
