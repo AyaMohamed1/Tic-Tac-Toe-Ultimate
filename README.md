@@ -17,10 +17,10 @@ The full project of Tic-Tac-Toe with single player mode and multiplayer mode
 
 -features:
     Core:: Multi - forms - redirect - local storage for multiple users. From 22 : 27.
-    Additional:: Ai - landing page - Change mode 27 : 30.
+    // Additional:: Ai - landing page - Change mode 27 : 30.
 
 -sprints:
 22 : 23 for forms
-24 : 27 for game and its functions Multi and started search about AI
-28 : 30 handle problems, AI, landing page, redirect,  select mode and change mode.
+// 24 : 27 for game and its functions Multi and started search about AI
+// 28 : 30 handle problems, AI, landing page, redirect,  select mode and change mode.
 
