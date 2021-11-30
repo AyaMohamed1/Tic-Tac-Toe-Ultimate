@@ -9,7 +9,7 @@
   font-family: Gloss And Bloom, sans-serif;
 }
 body {
-  background: url("https://github.com/AyaMohamed1/Tic-Tac-Toe-Ultimate/tac.jpg") no-repeat center center fixed;
+  background: url("./tac.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
