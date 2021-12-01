@@ -1,26 +1,36 @@
 # Tic-Tac-Toe-Ultimate
-The full project of Tic-Tac-Toe with single player mode and multiplayer mode
 
+The full project of Tic-Tac-Toe with both single and multiplayer modes 
 
--intro about project
+## Why Tic-Tac-Toe?
 
--why?
-    1- creativity
-    2- to be different
+1. It has more room for creative design and logic solving
+2. To stand out from the crowd 
 
--first meeting: 21-nov
+## Project Planning Walkthrough
 
--our tasks:
-    -Alaa → CSS - Design - HTML
-    -Nabil → Any functionality between UI and Game Logic - Forms - Local storage
-    -Aya → Core logic - Winning conditions - Vs AI
+ 1. Having a discussion about all team members core strengths
+2. Assigning project tasks according to number 1
+3. Breaking down the project to core and additional features
+4. Establishing Sprints and Milestones 
 
--features:
-    Core:: Multi - forms - redirect - local storage for multiple users. From 22 : 27.
-    // Additional:: Ai - landing page - Change mode 27 : 30.
+## Features
+### Core
+1. Forms
+2. Multiplayer Mode 
+3. Local storage for multiple users.
+4. Redirect box
 
--sprints:
-22 : 23 for forms
-// 24 : 27 for game and its functions Multi and started search about AI
-// 28 : 30 handle problems, AI, landing page, redirect,  select mode and change mode.
+### Additional
+1. Single Player Mode 
+2. Landing page 
+3. Change mode option
+
+## Sprints & Milstones
+
+* (22 Nov to 23 Nov) => { Forms }
+* (24 Nov to 27 Nov) => { Remaning core features }
+*  (28 Nov to 30 Nov) => { Additional features }
+
+That's all thanks for your time
 
