@@ -233,13 +233,13 @@ button:hover {
   animation: rotate 12s ease-in forwards infinite;
   animation-delay: 3s;
 }
-.circle:nth-child(4) {
+.circle.circle2 {
   animation-delay: 5s;
   border-color: #fff;
   top: 30vh;
   left: 30vw;
 }
-.ex:nth-child(6) {
+.ex.ex2 {
   animation-delay: 7s;
   top: 70vh;
   left: 70vw;
@@ -302,13 +302,13 @@ button:hover {
     font-size: 5px !important;
     animation: rotateSmall 12s ease-in forwards infinite !important;
   }
-  .circle:nth-child(4) {
+  .circle.circle2 {
     animation-delay: 5s;
     border-color: #fff;
     top: 20vh;
     left: 30vw;
   }
-  .ex:nth-child(6) {
+  .ex.ex2 {
     animation-delay: 7s;
     top: 80vh;
     left: 70vw;
