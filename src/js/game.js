@@ -406,3 +406,6 @@ function checkNewValue(cell) {
 function changeMode() {
   document.location.reload(true);
 }
+function logOut() {
+  window.open("signIn.html", "_self");
+}
