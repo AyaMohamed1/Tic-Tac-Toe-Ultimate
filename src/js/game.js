@@ -338,7 +338,12 @@ function clearBoard() {
     document.getElementById(boxId).innerText = "";
   }
   if (notAvailable() == 1) {
-    putFirstOBoard(ai);
+    async function putFirst() {
+      await new Promise(resolve => setTimeout(resolve, 2500));
+      putFirstOBoard(ai);
+    }
+    putFirst();
+    
   }
 }
 
