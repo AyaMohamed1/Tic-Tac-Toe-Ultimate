@@ -86,12 +86,29 @@ button:hover {
   transform: translate(-50%, -50%) scale(0.7);
 }
 
-.play-board .details {
+.select {
+  margin: 7px 7px 12px 7px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(-120deg, #fc415a, #591bc5);
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 700;
+  opacity: 0.7;
+  padding: 4px;
+  transition: 1s;
+}
+.select:hover {
+  opacity: 1;
+  transition: 1s;
+}
+.details {
   padding: 7px;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.815);
 }
-.play-board .players {
+.players {
   width: 100%;
   display: flex;
   position: relative;
