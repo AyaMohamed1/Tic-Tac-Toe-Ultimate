@@ -303,13 +303,13 @@ button:hover {
     animation: rotateSmall 12s ease-in forwards infinite !important;
   }
   .circle.circle2 {
-    animation-delay: 5s;
+    animation-delay: 5s !important;
     border-color: #fff;
     top: 20vh;
     left: 30vw;
   }
   .ex.ex2 {
-    animation-delay: 7s;
+    animation-delay: 7s !important;
     top: 80vh;
     left: 70vw;
   }
