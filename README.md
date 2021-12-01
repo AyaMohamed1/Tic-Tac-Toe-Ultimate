@@ -33,7 +33,7 @@ The full project of Tic-Tac-Toe with both single and multiplayer modes
 * (28 Nov to 30 Nov) => { Additional features }
 
 ## Links
-[Project live version](https://github.com/AyaMohamed1/Tic-Tac-Toe-Ultimate)
+[Project live version](https://ayamohamed1.github.io/Tic-Tac-Toe-Ultimate/)
 
 That's all thanks for your time
 
