@@ -21,6 +21,7 @@ The full project of Tic-Tac-Toe with both single and multiplayer modes
 1. Single Player Mode 
 2. Landing page 
 3. Change mode option
+4. Log out
 
 ## Sprints & Milstones
 
