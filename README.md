@@ -2,10 +2,6 @@
 
 The full project of Tic-Tac-Toe with both single and multiplayer modes 
 
-## Why Tic-Tac-Toe?
-
-1. It has more room for creative design and logic solving
-2. To stand out from the crowd 
 
 ## Project Planning Walkthrough
 
