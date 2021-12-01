@@ -25,7 +25,7 @@ The full project of Tic-Tac-Toe with both single and multiplayer modes
 
 ## Sprints & Milstones
 
-* (21 Nov to 23 Nov) => { Forms }
+* (22 Nov to 23 Nov) => { Forms }
 * (24 Nov to 27 Nov) => { Remaning core features }
 * (28 Nov to 30 Nov) => { Additional features }
 
